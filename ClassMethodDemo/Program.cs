@@ -33,14 +33,7 @@ namespace ClassMethodDemo
             customer4.LastName="Alemdar";
             customer4.CitizenshipNumber="595956336890";
 
-            Customer customer5=new Customer();
-            customer5.Id=2;
-            customer5.FirstName="Ercan";
-            customer5.LastName="Uçar";
-            customer5.CitizenshipNumber="879513654321";
 
-            
-           
              
             //CustomerManager instance
             CustomerManager manager=new CustomerManager();
