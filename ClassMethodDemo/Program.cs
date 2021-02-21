@@ -23,15 +23,22 @@ namespace ClassMethodDemo
 
             Customer customer3=new Customer();
             customer3.Id=3;
-            customer3.FirstName="Süleyman";
-            customer3.LastName="Çakır";
+            customer3.FirstName="Akın";
+            customer3.LastName="Aras";
             customer3.CitizenshipNumber="565656565560";
             
             Customer customer4=new Customer();
             customer4.Id=4;
-            customer4.FirstName="Polat";
-            customer4.LastName="Alemdar";
+            customer4.FirstName="Orhan";
+            customer4.LastName="Kılıç";
             customer4.CitizenshipNumber="595956336890";
+
+
+            Customer customer5=new Customer();
+            customer5.Id=5;
+            customer5.FirstName="Turan";
+            customer5.LastName="Duman";
+            customer5.CitizenshipNumber="595956336890";
 
 
              
@@ -43,6 +50,7 @@ namespace ClassMethodDemo
             manager.Add(customer2);
             manager.Add(customer3);
             manager.Add(customer4);
+            manager.Add(customer5);
             
             //Console.WriteLine("");
             Console.WriteLine("\nMüşteri Silme Sayfası");
@@ -56,7 +64,8 @@ namespace ClassMethodDemo
                  customer1,
                  customer2,
                  customer3,
-                 customer4
+                 customer4,
+                 customer5
              };
 
             Console.WriteLine("\n Müşteri Görüntüleme Sayfası \n");

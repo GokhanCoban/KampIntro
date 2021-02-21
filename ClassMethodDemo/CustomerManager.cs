@@ -6,7 +6,7 @@ namespace ClassMethodDemo
 {
     public class CustomerManager
     {
-         //Sisteme Müşteri Ekler
+         //Sisteme Müşteri Ekler.
         public void Add(Customer customer)
         {
            
@@ -14,14 +14,14 @@ namespace ClassMethodDemo
          
         }
          
-         //Sistemden Müşteri Siler
+         //Sistemden Müşteri Siler.
         public void Delete(Customer customer)
         {
             
             Console.WriteLine("Müşteri {0, -10} {1,-10} Silindi.",customer.FirstName,customer.LastName);
         }
 
-        //Sistemdeki Müşterileri Listeler
+        //Sistemdeki Müşterileri Listeler.
         public void PrintCustomers(List<Customer> customers)
         {    
              
