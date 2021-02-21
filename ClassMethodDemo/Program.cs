@@ -21,19 +21,21 @@ namespace ClassMethodDemo
             customer2.LastName="Uçar";
             customer2.CitizenshipNumber="879513654321";
 
+            // 3. Customer instance 
             Customer customer3=new Customer();
             customer3.Id=3;
             customer3.FirstName="Akın";
             customer3.LastName="Aras";
             customer3.CitizenshipNumber="565656565560";
             
+            // 4. Customer instance
             Customer customer4=new Customer();
             customer4.Id=4;
             customer4.FirstName="Orhan";
             customer4.LastName="Kılıç";
             customer4.CitizenshipNumber="595956336890";
 
-
+            // 5. Customer instance
             Customer customer5=new Customer();
             customer5.Id=5;
             customer5.FirstName="Turan";
