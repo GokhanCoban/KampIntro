@@ -30,6 +30,7 @@ namespace MyDictionaryDemo
         }
     
        //Bu listeye anahtar ve değer biçiminde bir eleman ekler.
+       //Eğer kapasite eleman sayısına eşitse kapasiteyi 2 katına çıkarır.
         public void Add(TKey key,TValue value)
         {
 
