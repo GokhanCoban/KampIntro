@@ -54,11 +54,13 @@ namespace MyDictionaryDemo
 
             Kapasite: 7
             Eleman Sayısı : 4
+
             --------Keys--------
             Key: 76232321626
             Key: 12385469857
             Key: 43598651421
             Key: 78933223655
+            
             --------Values--------
             Value: Engin Demiroğ
             Value: Gökhan Çoban

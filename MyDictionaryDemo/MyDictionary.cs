@@ -64,7 +64,8 @@ namespace MyDictionaryDemo
             get
             {
 
-                //Bu eski kod parçası alında bir altta sadece tek satır kod yetiyordu.
+                //Bu eski kod parçası
+                //Aslında bir altta sadece tek satır kod yetiyordu.
 
                 /* TKey[] allKeys=new TKey[_length];
                for (int i = 0; i <= _length-1; i++)
@@ -85,7 +86,9 @@ namespace MyDictionaryDemo
         {
             get
             {
-                //Bu eski kod parçası alında bir altta sadece tek satır kod yetiyordu.
+                //Bu eski kod parçası
+                //Aslında bir altta sadece tek satır kod yetiyordu.
+
                 /* TValue[]  allValues=new TValue[_length];
 
                 for (int i = 0; i <_length; i++)
