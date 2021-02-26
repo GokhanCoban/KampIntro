@@ -5,8 +5,8 @@ namespace MyDictionaryDemo
 {
     public class MyDictionary<TKey, TValue>
     {
-        private TKey[] keys = null;
-        private TValue[] values = null;
+        private TKey[] _keys = null;
+        private TValue[] _values = null;
         private int _capacity = 0;
         private int _defaultCapacity = 5;
         private int _length = 0;
@@ -15,8 +15,8 @@ namespace MyDictionaryDemo
         public MyDictionary()
         {
             _capacity = _defaultCapacity;
-            keys = new TKey[_capacity];
-            values = new TValue[_capacity];
+            _keys = new TKey[_capacity];
+            _values = new TValue[_capacity];
 
         }
 
@@ -24,8 +24,8 @@ namespace MyDictionaryDemo
         public MyDictionary(int capacity)
         {
             _capacity = capacity;
-            keys = new TKey[_capacity];
-            values = new TValue[_capacity];
+            _keys = new TKey[_capacity];
+            _values = new TValue[_capacity];
 
         }
 
@@ -34,24 +34,24 @@ namespace MyDictionaryDemo
         public void Add(TKey key, TValue value)
         {
 
-            keys.SetValue(key, _length);
-            values.SetValue(value, _length);
+            _keys.SetValue(key, _length);
+            _values.SetValue(value, _length);
             _length += 1;
 
             if (_capacity == _length)
             {
                 int _newCapacity = _capacity *= 2;
 
-                TKey[] _tempKeys = keys;
-                TValue[] _tempValues = values;
+                TKey[] _tempKeys = _keys;
+                TValue[] _tempValues = _values;
 
-                keys = new TKey[_newCapacity];
-                values = new TValue[_newCapacity];
+                _keys = new TKey[_newCapacity];
+                _values = new TValue[_newCapacity];
 
                 for (int i = 0; i < _length; i++)
                 {
-                    keys[i] = _tempKeys[i];
-                    values[i] = _tempValues[i];
+                    _keys[i] = _tempKeys[i];
+                    _values[i] = _tempValues[i];
                 }
 
             }
@@ -75,7 +75,7 @@ namespace MyDictionaryDemo
 
                return allKeys; */
 
-                return keys;
+                return _keys;
 
             }
 
@@ -98,7 +98,7 @@ namespace MyDictionaryDemo
 
                 return allValues; */
 
-                return values;
+                return _values;
             }
         }
 

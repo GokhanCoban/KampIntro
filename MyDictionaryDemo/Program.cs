@@ -12,16 +12,17 @@ namespace MyDictionaryDemo
             myDictionary.Add("12385469857", "Gökhan Çoban");
             myDictionary.Add("43598651421", "Ercan Uçar");
             myDictionary.Add("78933223655", "Akın Aras");
+            
 
 
 
 
 
 
-            int cap = myDictionary.Capacity;
-            int len = myDictionary.Length;
-            Console.WriteLine("Kapasite : " + cap);
-            Console.WriteLine("Eleman Sayısı : " + len);
+            int capacity = myDictionary.Capacity;
+            int length = myDictionary.Length;
+            Console.WriteLine("Kapasite : " + capacity);
+            Console.WriteLine("Eleman Sayısı : " + length);
 
 
             string[] keys = myDictionary.Keys;
@@ -54,13 +55,11 @@ namespace MyDictionaryDemo
 
             Kapasite: 7
             Eleman Sayısı : 4
-
             --------Keys--------
             Key: 76232321626
             Key: 12385469857
             Key: 43598651421
             Key: 78933223655
-            
             --------Values--------
             Value: Engin Demiroğ
             Value: Gökhan Çoban
